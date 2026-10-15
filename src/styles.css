@@ -1,0 +1,27 @@
+:root{
+  --bg:#f5f6fa;
+  --accent:#1976d2;
+  --muted:#666;
+}
+*{box-sizing:border-box;font-family:Inter,Segoe UI,Helvetica,Arial,sans-serif}
+body,html,#root{height:100%;margin:0;background:var(--bg);color:#222}
+.app{display:flex;flex-direction:column;min-height:100vh}
+.header{background:white;padding:16px 20px;border-bottom:1px solid #eee}
+.header h1{margin:0;font-size:20px}
+.header-sub{color:var(--muted);font-size:13px}
+.main{display:flex;flex:1;padding:20px;gap:16px}
+.sidebar{width:320px}
+.player-area{flex:1;background:white;border-radius:8px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);min-height:420px}
+.lobby h3{margin-top:0}
+.cards{display:flex;flex-direction:column;gap:10px}
+.game-card{display:flex;align-items:center;gap:12px;background:white;padding:10px;border-radius:8px;border:1px solid #eee}
+.game-thumb{width:56px;height:56px;border-radius:6px;background:linear-gradient(135deg,var(--accent),#63a4ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+.game-meta{flex:1}
+.game-title{font-weight:600}
+.game-desc{color:var(--muted);font-size:13px}
+.game-actions button{padding:8px 12px;border-radius:6px;border:0;background:var(--accent);color:white;cursor:pointer}
+.player-wrapper{display:flex;flex-direction:column;gap:12px}
+.player-header{display:flex;align-items:center;justify-content:space-between}
+.phaser-container{display:flex;align-items:center;justify-content:center}
+.welcome{padding:40px;color:var(--muted)}
+.footer{padding:12px 20px;font-size:13px;color:var(--muted);border-top:1px solid #eee;background:white}
